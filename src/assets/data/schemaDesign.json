@@ -1,0 +1,73 @@
+{
+  "user" : {
+    "name": {
+      "firstname": "String",
+      "lastname": "String"
+    },
+    "email": "String",
+    "password": "String",
+    "userid": "String",
+    "nickname": "String",
+    "Home Address": {
+      "address": "String",
+      "address2": "String",
+      "city": "String",
+      "state": "String",
+      "zip": "Number"
+    },
+
+    "userid": "String",
+    "password": "String",
+    "username": "String",
+    "password": "String",
+    "id": "moongose.Schema.Types.ObjectId"
+  }
+}1
+
+GeekBookStore Login Credentials           Book Rating and Commenting Information
+  - User ID                                 - Nickname
+  - Password
+
+Personal Information                      My Payment Information
+  - Name                                    - Credit Card Information (MULTIPLE)
+  - Email Address                           - Shipping Address (MULTIPLE)
+  - Home Address
+
+{"_id":"5b43f6eabdf5977e3a7caeb7","email":"ccepe014@fiu.edu","username":"ccepe014","password":"password2018","name":{"firstname":"Cristian","lastname":"Cepeda"},"address":{"street":"11200 SW 8th St","city":"Miami","state":"FL","zipcode":"33199"}}
+{"_id":"5b47513be196087e3a69b8f8","email":"hcobo002@fiu.edu","username":"hcobo002","password":"password2018","name":{"firstname":"Heli","lastname":"Cobos"},"address":{"street":"8650 Bird Rd","city":"Miami","state":"FL","zipcode":"33155"}}
+{
+  "_id":"5b4401fbe196087e3a69b8f7",
+  "email":"vchan023@fiu.edu",
+  "username":"vchan023",
+  "password":"password2018",
+  "name": {
+    "firstname":"Victor",
+    "lastname":"Chang"
+  },
+  "address": {
+    "street":"11401 NW 12th St",
+    "city":"Miami",
+    "state":"FL",
+    "zipcode":"33172"
+    }
+  }
+
+  {
+    "users": [
+      {
+        "email" : "camilo2017@gmail.com",
+        "username" : "camilo2017",
+        "password" : "cepeda1993",
+        "name" : {
+          "firstname" : "Cristian",
+          "lastName" : "Cepeda"
+          },
+        "address" : {
+          "street": "",
+          "city" : "",
+          "state" : "",
+          "zipcode" : ""
+        }
+      }
+    ]
+  }

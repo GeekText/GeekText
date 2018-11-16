@@ -1,0 +1,9 @@
+<!--
+This is a regular HTML file, however we can embed JavaScript in them by using
+these template tags. We can also pass in variables using the second argument
+of render in the server.js file. In this case we are passing it a content string.
+-->
+
+<%- include('header') -%>
+  <div id="root"><%- content -%></div>
+<%- include('footer') -%>

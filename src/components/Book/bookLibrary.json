@@ -1,0 +1,174 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "publisher": "Turtleback Books",
+      "isbn": "9781417664016",
+      "summary": "The story begins in seventeenth-century Boston, then a Puritan settlement. A young woman, Hester Prynne, is led from the town prison with her infant daughter, Pearl, in her arms and the scarlet letter “A” on her breast. A man in the crowd tells an elderly onlooker that Hester is being punished for adultery.",
+      "comments": [
+        {
+          "comment": "This book was awesome! Definitely recommend!",
+          "name": "Joey"
+        },
+        {
+          "comment": "I thought the book was confusing at times and didn't really make sense.",
+          "name": "Greg"
+        },
+        {
+          "comment": "Thought the storyline was interesting but never got into it.",
+          "name": "Stephanie"
+        }
+      ],
+      "reviews": [
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        1,
+        2,
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Calypso",
+      "author": "David Sedaris",
+      "publisher": "Little, Brown and Company",
+      "isbn": "9780316524827",
+      "summary": "If you've ever laughed your way through David Sedaris's cheerfully misanthropic stories, you might think you know what you're getting with Calypso. You'd be wrong. When he buys a beach house on the Carolina coast, Sedaris envisions long, relaxing vacations spent playing board games and lounging in the sun with those he loves most. And life at the Sea Section, as he names the vacation home, is exactly as idyllic as he imagined, except for one tiny, vexing realization: it's impossible to take a vacation from yourself."
+    },
+    {
+      "id": 3,
+      "title": "The Death of Mrs. Westaway",
+      "author": "Ruth Ware",
+      "publisher": "Gallery/Scout Press",
+      "isbn": "9781982103088"
+    },
+    {
+      "id": 4,
+      "title": "The Outsider",
+      "author": "Stephen King",
+      "publisher": "Scribner",
+      "isbn": "9781501180989"
+    },
+    {
+      "id": 5,
+      "title": "Shelter in Place",
+      "author": "Nora Roberts",
+      "publisher": "St. Martin's Press",
+      "isbn": "9781250161598"
+    },
+    {
+      "id": 6,
+      "title": "The President Is Missing",
+      "author": "Bill Clinton and James Patterson",
+      "publisher": "Little, Brown and Company and Knopf",
+      "isbn": "9780316412698"
+    },
+    {
+      "id": 7,
+      "title": "Oh, the Places You'll Go!",
+      "author": "Dr. Seuss",
+      "publisher": "Random House Children's Books",
+      "isbn": "9780679805274"
+    },
+    {
+      "id": 8,
+      "title": "Legendary",
+      "author": "Stephanie Garber",
+      "publisher": "Flatiron Books",
+      "isbn": "9781250301277"
+    },
+    {
+      "id": 9,
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "publisher": "Simon & Schuster",
+      "isbn": "9781451673319"
+    },
+    {
+      "id": 10,
+      "title": "Refugee",
+      "author": "Alan Gratz",
+      "publisher": "Scholastic, Inc.",
+      "isbn": "9780545880831"
+    },
+    {
+      "id": 11,
+      "title": "The Soul of America: The Battle for Our Better Angels",
+      "author": "Jon Meacham",
+      "publisher": "Random House Publishing Group",
+      "isbn": "9780399589812"
+    },
+    {
+      "id": 12,
+      "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+      "author": "Mark Manson",
+      "publisher": "HarperCollins Publishers",
+      "isbn": "9780062457714"
+    },
+    {
+      "id": 13,
+      "title": "The Hate U Give",
+      "author": "Angie Thomas",
+      "publisher": "HarperCollins Publishers",
+      "isbn": "9780062498533"
+    },
+    {
+      "id": 14,
+      "title": "Wild Rescuers: Guardians of the Taiga",
+      "author": "StacyPlays",
+      "publisher": "HarperCollins Publishers",
+      "isbn": "9780062846327"
+    },
+    {
+      "id": 15,
+      "title": "War Storm",
+      "author": "Victoria Aveyard",
+      "publisher": "HarperCollins Publishers",
+      "isbn": "9780062422996"
+    },
+    {
+      "id": 16,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "publisher": "HarperCollins Publishers",
+      "isbn": "9780062315007"
+    },
+    {
+      "id": 17,
+      "title": "How to Read Literature Like a Professor Revised Edition: A Lively and Entertaining Guide to Reading Between the Lines",
+      "author": "Thomas C Foster",
+      "publisher": "HarperCollins Publishers",
+      "isbn": "9780062301673"
+    },
+    {
+      "id": 18,
+      "title": "Little Fires Everywhere",
+      "author": "Celeste Ng",
+      "publisher": "Penguin Publishing Group",
+      "isbn": "9780735224292"
+    },
+    {
+      "id": 19,
+      "title": "Barracoon: The Story of the Last Black Cargo",
+      "author": "Zora Neale Hurston,",
+      "publisher": "HarperCollins Publishers",
+      "isbn": "9780062748201"
+    },
+    {
+      "id": 20,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publisher": "Grand Central Publishing",
+      "isbn": "9780446310789"
+    }
+  ]
+}

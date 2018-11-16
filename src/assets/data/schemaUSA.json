@@ -1,0 +1,204 @@
+{
+  "states": [
+    {
+      "display" : "AL",
+      "key" : "Alabama"
+    },
+    {
+      "display" : "AK",
+      "key" : "Alaska"
+    },
+    {
+      "display" : "AZ",
+      "key" : "Arizona"
+    },
+    {
+      "display" : "AR",
+      "key" : "Arkansas"
+    },
+    {
+      "display" : "CA",
+      "key" : "California"
+    },
+    {
+      "display" : "CO",
+      "key" : "Colorado"
+    },
+    {
+      "display" : "CT",
+      "key" : "Connecticut"
+    },
+    {
+      "display" : "DE",
+      "key" : "Delaware"
+    },
+    {
+      "display" : "FL",
+      "key" : "Florida"
+    },
+    {
+      "display" : "GA",
+      "key" : "Georgia"
+    },
+    {
+      "display" : "HI",
+      "key" : "Hawaii"
+    },
+    {
+      "display" : "ID",
+      "key" : "Idaho"
+    },
+    {
+      "display" : "IL",
+      "key" : "Illinois"
+    },
+    {
+      "display" : "IN",
+      "key" : "Indiana"
+    },
+    {
+      "display" : "IA",
+      "key" : "Iowa"
+    },
+    {
+      "display" : "KS",
+      "key" : "Kansas"
+    },
+    {
+      "display" : "KY",
+      "key" : "Kentucky"
+    },
+    {
+      "display" : "LA",
+      "key" : "Louisiana"
+    },
+    {
+      "display" : "ME",
+      "key" : "Maine"
+    },
+    {
+      "display" : "MD",
+      "key" : "Maryland"
+    },
+    {
+      "display" : "MA",
+      "key" : "Massachusetts"
+    },
+    {
+      "display" : "MI",
+      "key" : "Michigan"
+    },
+    {
+      "display" : "MN",
+      "key" : "Minnesota"
+    },
+    {
+      "display" : "MS",
+      "key" : "Mississippi"
+    },
+    {
+      "display" : "MO",
+      "key" : "Missouri"
+    },
+    {
+      "display" : "MT",
+      "key" : "Montana"
+    },
+    {
+      "display" : "NE",
+      "key" : "Nebraska"
+    },
+    {
+      "display" : "NV",
+      "key" : "Nevada"
+    },
+    {
+      "display" : "NH",
+      "key" : "New Hampshire"
+    },
+    {
+      "display" : "NJ",
+      "key" : "New Jersey"
+    },
+    {
+      "display" : "NM",
+      "key" : "New Mexico"
+    },
+    {
+      "display" : "NY",
+      "key" : "New York"
+    },
+    {
+      "display" : "NC",
+      "key" : "North Carolina"
+    },
+    {
+      "display" : "ND",
+      "key" : "North Dakota"
+    },
+    {
+      "display" : "OH",
+      "key" : "Ohio"
+    },
+    {
+      "display" : "OK",
+      "key" : "Oklahoma"
+    },
+    {
+      "display" : "OR",
+      "key" : "Oregon"
+    },
+    {
+      "display" : "PA",
+      "key" : "Pennsylvania"
+    },
+    {
+      "display" : "RI",
+      "key" : "Rhode Island"
+    },
+    {
+      "display" : "SC",
+      "key" : "South Carolina"
+    },
+    {
+      "display" : "SD",
+      "key" : "South Dakota"
+    },
+    {
+      "display" : "TD",
+      "key" : "Tennessee"
+    },
+    {
+      "display" : "TX",
+      "key" : "Texas"
+    },
+    {
+      "display" : "UT",
+      "key" : "Utah"
+    },
+    {
+      "display" : "VT",
+      "key" : "Vermont"
+    },
+    {
+      "display" : "VA",
+      "key" : "Virginia"
+    },
+    {
+      "display" : "WA",
+      "key" : "Washington"
+    },
+    {
+      "display" : "WV",
+      "key" : "West Virginia"
+    },
+    {
+      "display" : "WI",
+      "key" : "Wisconsin"
+    },
+    {
+      "display" : "WY",
+      "key" : "Wyoming"
+    }
+  ]
+}

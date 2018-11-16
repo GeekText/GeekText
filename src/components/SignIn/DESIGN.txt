@@ -1,0 +1,14 @@
+You can create an object from passing in a model.
+
+From the sign In Page when the user Enters the Username and Password we should
+look in the database for the username and see if the password matches
+
+http://localhost:8000/signin
+
+lets set state for the signin tab so that we can grab the username and the 
+password.
+{
+  GET /signin/:username {
+    "desc": "This should "
+  }
+}

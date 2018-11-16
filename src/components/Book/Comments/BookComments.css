@@ -1,0 +1,35 @@
+#submit-review {
+  display: block; 
+  margin: 0 auto;
+}
+
+.comments {
+  text-align: left;
+}
+.comment {
+  text-align: left;
+}
+
+#name-input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+
+}
+
+#review-input {
+  display: block;
+  margin: 0 auto;
+}
+
+#nickname {
+  margin: 0;
+  font-size: .7em;
+}
+
+.summary {
+  
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1em;
+}

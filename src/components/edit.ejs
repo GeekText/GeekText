@@ -1,0 +1,66 @@
+<!--RestulfulBookApp-->
+<% include ./partials/header %>
+    <div class ="container">
+        <div class="row" style= width: "30%; margin: 50px auto;">
+            <!--<div style = "width: 30%; margin: 500px auto;">-->
+             <!--This is where it goes when executed-->
+            <form action = "/books/<%= book._id%>?_method=PUT" method="POST">
+                    <!--<h1 style= "text-align: center;"> In Edit Mode: <%=book.name %></h1>-->
+                    <div class="form-group">
+                        <label>Image</label>
+                        <input class = "form-control" type="text" name="book[image]" value="<%= book.image %>">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input class = "form-control" type="text" name="book[name]" value="<%= book.name %>">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Author</label>
+                        <input class = "form-control" type="text" name="book[author]" value="<%= book.author %>">
+                    </div>
+                    
+                      <div class="form-group">
+                        <label>Bio</label>
+                        <input class = "form-control" type="text" name="book[bio]" value="<%=book.bio %>">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Book description</label>
+                        <input class = "form-control" type="text" name="book[description]" value="<%= book.description %>">
+                        <!--<p><textarea name="book[description]"></textarea></p>-->
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Genre</label>
+                        <input class = "form-control" type="text" name="book[genre]" value="<%= book.genre %>">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Published Info.</label>
+                        <input class = "form-control" type="text" name="book[publishedInfo]" value="<%= book.publishedInfo %>">
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label>Ratings</label>
+                        <input class = "form-control" type="text" name="book[rating]" value="<%= book.rating %>">
+                    </div>
+                    
+                    <div class="form-group">
+                        <button class = "btn btn-lg btn-primary btn-block"> Update! </button>
+                    </div>
+            </form>
+            <div>
+            <a href="/books">Go Back</a>
+        </div>
+    </div>
+<% include ./partials/footer %>
+
+
+
+
+
+
+

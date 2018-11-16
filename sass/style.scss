@@ -1,0 +1,95 @@
+/* Add any comments here */
+
+body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  background-color: #00fa85;
+}
+
+.Title{
+  font-size: 35px;
+}
+
+.CardSignIn {
+  width: 18rem;
+}
+
+/* Victor's stuff*/
+.item img {
+  visibility: hidden;
+}
+
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+
+   // background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+
+}
+.modalDialog > div {
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    margin: 1% auto;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);}
+
+#openModal img  {
+    width: 550px;
+    height: 650px;
+}
+
+.close {
+    background: #00fa85;
+    color: #00fa85;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}

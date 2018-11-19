@@ -1,0 +1,88 @@
+<!--RestulfulBookApp-->
+<!--Click Book Details and this code happens. -->
+<%- include('../header') -%>
+
+<div id="root"><%- content -%></div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Book store</p>
+            <div class="list-group">
+                <li class="list-group-item active">Info 1</li>
+                <li class="list-group-item">Info 2</li>
+                <li class="list-group-item">Info 3</li>
+            </div>
+        </div>
+        
+        <div class="col-md-9">
+            <div class="container my-6">
+            <div class="thumbnail">
+                <div><img class="img-responsive" src="<%= book.image %>"></div>
+                
+                <div class="caption-full">
+                    <h4 class="pull-right">$10.00</h4>
+                    <h4> <a><%=book.name %></a></h4>
+                    <div class="well">
+                    <h6><strong>Author:</strong> <%= book.bookAuthor %></h6>
+                    <h6><strong>Bio:</strong> <%=book.bio%></h6>
+                    </div>
+                    <h6><strong>Description:</strong> <%= book.description %></h6>
+                    <h6><strong>Genre:</strong> <%=book.genre%></h6>
+                    <h6><strong>Published Info:</strong> <%= book.publishedInfo %></h6>
+                    <h6><strong>Ratings:</strong> <%= book.rating%></h6>
+                    <p><em> Bought By: <%= book.author.username %></em></p>
+                    <p><em><span><%=book.created.toDateString()%></span></em></p>
+                    
+                        <a class="btn btn-xs btn-warning" 
+                           href="/books/<%= book._id %>/edit">
+                           Edit
+                        </a>
+                        
+                        <form id="delete-form" action="/books/<%= book._id %>?_method=DELETE" method="POST">
+                            <button class="btn btn-xs btn-danger">Delete</button>
+                        </form>
+                        
+                </div>
+            </div>
+            </div>
+            
+            <div class="well">
+                <div class="text-right">
+                    <a class="btn btn-success" href="/books/<%= book._id %>/comments/new">Add New Comment</a>
+                </div>
+                
+                <hr>
+                <% book.comments.forEach(function(comment){ %>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <strong><%= comment.author.username %></strong>
+                            <span class="pull-right">10 days ago</span>
+                            <p>
+                                <%= comment.text %> 
+                            </p>
+                            
+                            <a class="btn btn-xs btn-warning" 
+                               href="/books/<%=book._id%>/comments/<%=comment._id %>/edit">
+                               Edit
+                            </a>
+                            
+                            <form id="delete-form" action="/books/<%=book._id %>/comments/<%=comment._id %>?_method=DELETE" method="POST">
+                                <input type="submit" class="btn btn-xs btn-danger" value="Delete">
+                            </form>
+                        </div>
+                    </div>
+                <% }) %>
+                <a href="/">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../footer') -%>
+
+
+
+
+

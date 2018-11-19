@@ -1,0 +1,61 @@
+/** For all classes that contain 'icon' do this. **/
+icon {
+    font-size: 3em; /** double size of the icon **/
+}
+
+.container.main{
+   margin-top: auto;
+   
+   /*padding-top: 100px;*/
+}
+
+/**h1 {
+    text-align:center; /*Centers the text 
+	margin: 0 auto;
+} **/
+
+
+img{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  
+}
+
+/*.thumbnail:hover {*/
+/*    position:relative;*/
+/*    top:-25px;*/
+/*    left:-35px;*/
+/*    width:400px;*/
+/*    height:auto;*/
+/*    display:block;*/
+/*    z-index:999;*/
+/*}*/
+
+/*.thumbnail img {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.thumbnail {*/
+/*    padding: 0;*/
+/*}*/
+
+/*.thumbnail .caption-full {*/
+/*    padding: 9px;*/
+/*}*/
+
+blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em+
+}
+
+/*For id = " "*/
+#delete-form{
+    display: inline;
+}
+
+

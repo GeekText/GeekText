@@ -3,6 +3,10 @@ import apiRouter from './api';
 import authRouter from './auth/routes';
 import config from '../config';
 
+//requring routes
+var    commentRoutes    = require("./routes/comments"),
+       bookRoutes       = require("./routes/books");
+
 const server = express();
 
 // Trying to connect to mongodb with mongoose
@@ -33,6 +37,9 @@ server.use(express.static('public'));
 /* This is using our index.js file inside the api folder */
 server.use('/', apiRouter);
 server.use('/auth', authRouter);
+// server.use("/", indexRoutes);
+server.use("/books", bookRoutes);
+server.use("/books/:id/comments", commentRoutes);
 
 /* Instead of listening to a single request event, an express server also
 handles server side routing for us. */

@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import config from '../../../../config';
 import AddCardModal from './AddCardModal';
+import visaLogo from '../img/Visa-logo.svg'
 
 const DisplayCard = (card) => (
   <tr>
     <th scope="row">
-      <img alt="Image" src="./img/Visa_Inc._logo.svg" className="avatar avatar-sm" />
+      <img alt="Image" src= {visaLogo} width= '20' height= '20'  className="avatar avatar-sm" />
     </th>
     <td>
       <span className="d-block">{card.cardnumber}</span>

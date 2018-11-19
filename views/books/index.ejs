@@ -1,0 +1,56 @@
+ <!--This is how we link the classes with each other -->
+ <!--Home Page-->
+<%- include('../header') -%>
+
+<div id="root"><%- content -%></div>
+
+
+<div class ="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Welcome to the bookstore!</h1>
+             <p>View your book collection</p>
+             <p>
+                <a class="btn btn-primary btn-large" href="/books/new">Purchase new books</a>
+             </p>
+         </div>
+     </header>
+     
+    <div class="row text-center" style="display:flex; flex-wrap: wrap; ">
+        <% books.forEach(function(book){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail" >
+                    <div style="width: 40px; length: 60px;">
+                        <img src="<%= book.image %>">
+                    </div>
+                   
+                   <div class="caption">
+                       <h4><%= book.name %></h4>
+                   </div>
+                   
+                   <h6>Author: <%=book.bookAuthor%></h6>
+                   
+                   <div class="well"><%= book.description.substring(0, 75) %>...
+                   <p></p> <!--To give a gapping/spacing underneath. -->
+                   
+                    <p>
+                       <a href="/books/<%= book._id %>" class="btn btn-primary">Read more</a>
+                   </p>
+                   </div> 
+                   <p>
+                        <em><%= book.author.username %> owns this book.</em>
+                   </p>
+                   
+                 
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+<%- include('../footer') -%>
+
+<!-- <% include ../partials/footer %> -->
+
+
+
+

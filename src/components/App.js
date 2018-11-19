@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 
 /* Pages */
-// import Book from './Book/Book';
+import Book from './Book/Book';
 import BookDetailsPage from './BookDetails/BookDetailsPage';
 import AccountPage from './Account/AccountPage';
 import SignInPage from './SignIn/SignInPage';
@@ -29,7 +29,7 @@ class App extends Component {
         <div>
           <HeaderNav />
           <Switch>
-            {/* <Route path="/Book" component={Book} /> */}
+            <Route path="/Book" component={Book} />
             <Route path="/BookDetails" component={BookDetailsPage} />
             <Route path="/account" component={AccountPage} />
             <Route path="/auth/signin" component={SignInPage} />

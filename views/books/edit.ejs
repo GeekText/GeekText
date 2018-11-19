@@ -1,0 +1,48 @@
+<!--RestulfulBookApp-->
+<%- include('../header') -%>
+
+<div id="root"><%- content -%></div>
+
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Edit book: <%= book.name %></h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/books/<%=book._id %>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="book[name]" value="<%= book.name %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="book[image]" value="<%= book.image %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="book[description]" value="<%= book.description %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="book[bookAuthor]" value="<%=book.bookAuthor%>">
+                </div>
+                <div class="form-group">
+                    <input class = "form-control" type="text" name="book[bio]" value="<%=book.bio%>">
+                </div>
+                <div class="form-group">
+                    <input class = "form-control" type="text" name="book[genre]" value="<%=book.genre%>">
+                </div>
+                <div class="form-group">
+                    <input class = "form-control" type="text" name="book[publishedInfo]" value="<%=book.publishedInfo%>">
+                </div>
+                <div class="form-group">
+                    <input class = "form-control" type="text" name="book[rating]" value="<%=book.rating%>">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include('../footer') -%>
+
+
+

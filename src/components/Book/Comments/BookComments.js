@@ -34,7 +34,7 @@ class BookComments extends Component {
           <p id="nickname">Nickname</p>
           <input id="name-input" type="text" name="name" required />
           <textarea id="review-input" name="review" rows="10" cols="80" required />
-          <button id="submit-review" type="submit"> Submit Review </button>
+          <button id="submit-review" className="btn btn-warning btn-lg btn-block p-1 mt-3" width='100' type="submit"> Submit Review </button>
         </form>
       </div>
 

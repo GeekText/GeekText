@@ -3,7 +3,7 @@ import BookComment from './Comments/BookComments';
 // import BookReviews from './Comments/BookReviews';
 import data from './bookLibrary.json';
 import './Book.css';
-import BookImg from '../../assets/ScarletLetter.jpg';
+import BookImg from './ScarletLetter.jpg';
 class Book extends Component {
   constructor(props) {
     super(props);

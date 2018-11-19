@@ -7,7 +7,7 @@ class HeaderNav extends Component {
       <header>
         <div className="d-flex align-items-center py-0 px-md-4 mb-3 border-bottom box-shadow">
           <div className="col d-flex text-center">
-            <Link to="/" className="Title p-2 flex-grow-1 navbar-brand text-warning">Bookify</Link>
+            <Link to="/" href="/" className="Title p-2 flex-grow-1 navbar-brand text-warning">Bookify</Link>
           </div>
 
           <div className="col-8 d-flex justify-content-center">

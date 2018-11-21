@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import { Redirect } from 'react-router-dom';
 
+function validatePassword(password) {
+  // Validating Password
+  var passwordRegEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{7,}$/;
+  if (!passwordRegEx.test(password)){
+    console.log("Password is Not Valid");
+    return false;
+  }
+
+  return true;
+}
+
 class TabCreateAccount extends Component {
   constructor(props){
     super(props);
@@ -59,18 +70,21 @@ class TabCreateAccount extends Component {
   //   }
   // }
   createNewAccount(evt){
-
     evt.preventDefault();
-    axios.post('/auth/newcreateaccount', {
-      firstname: this.state.firstname,
-      lastname: this.state.lastname,
-      username: this.state.username,
-      password: this.state.password})
-      .then(function(response) {
-        console.log(response);
-        console.log(response.data._id);
-      });
-    alert('Account was created.');
+    if(validatePassword(this.state.password)) {
+      axios.post('/auth/newcreateaccount', {
+        firstname: this.state.firstname,
+        lastname: this.state.lastname,
+        username: this.state.username,
+        password: this.state.password})
+        .then(function(response) {
+          console.log(response);
+          console.log(response.data._id);
+        });
+      alert('Account was created.');
+    } else {
+      alert('Password not strong enough please try again.');
+    }
   }
 
   render() {

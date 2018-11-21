@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import config from '../../../../config';
 import AddCardModal from './AddCardModal';
-import visaLogo from '../img/Visa-logo.svg'
+import visaLogo from '../img/creditcard.png'
 
 const DisplayCard = (card) => (
   <tr>

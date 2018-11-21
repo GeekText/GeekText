@@ -2,6 +2,46 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import config from '../../../../config';
 
+function validateCreditCard(cardnumber, expirydate, securitycode) {
+  // Validating Credit Card Number
+  cardnumber = cardnumber.replace(/\s+/g, '');
+  var sixteenDigits = /^\d{16}$/;
+  if (!sixteenDigits.test(cardnumber)){
+    console.log("Credit Card Number Not Valid");
+    return false;
+  }
+
+  // Validating Expiry Date
+  var today, dayToTest;
+  var splitDate = expirydate.split('/');
+  if (splitDate.length > 1) {
+    var month= splitDate[0];
+    var year = splitDate[1];
+    today = new Date();
+    dayToTest = new Date();
+    dayToTest.setFullYear(year, month, 1);
+
+    if (dayToTest < today) {
+      console.log("Expiration Date is not valid");
+      return false;
+    }
+  } else {
+    console.log("Expiration Date is not valid");
+    return false;
+  }
+
+  // Validate Security Code
+  securitycode = securitycode.replace(/\s+/g, '');
+  var threeDigits = /^\d{3}$/;
+  if (!threeDigits.test(securitycode)){
+    console.log("Security Code Not Valid");
+    return false;
+  }
+
+  return true;
+
+}
+
 class AddCardModal extends Component {
   constructor(props){
     super(props);
@@ -41,16 +81,20 @@ class AddCardModal extends Component {
   }
   createNewCreditCard(evt){
     evt.preventDefault();
-    axios.post(`/creditcard/${config.usersObjectId}/createcreditcard`, {
-      nameoncard: this.state.nameoncard,
-      cardnumber: this.state.cardnumber,
-      expirydate: this.state.expirydate,
-      securitycode: this.state.securitycode
-    })
-      .then(function(response){
-        console.log(response);
-      });
-    alert('New credit card created.');
+    if (validateCreditCard(this.state.cardnumber, this.state.expirydate, this.state.securitycode)) {
+      axios.post(`/creditcard/${config.usersObjectId}/createcreditcard`, {
+        nameoncard: this.state.nameoncard,
+        cardnumber: this.state.cardnumber,
+        expirydate: this.state.expirydate,
+        securitycode: this.state.securitycode
+      })
+        .then(function(response){
+          console.log(response);
+        });
+      alert('New credit card created.');
+    } else {
+      alert('Credit Card Format was not valid please try again.');
+    }
   }
 
   render() {

@@ -2,7 +2,20 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import config from '../../../config';
+var crypto = require('crypto');
+var rand = require('csprng');
 // import axios from 'axios';
+
+function validatePassword(password) {
+  // Validating Password
+  var passwordRegEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{7,}$/;
+  if (!passwordRegEx.test(password)){
+    console.log("Password is Not Valid");
+    return false;
+  }
+
+  return true;
+}
 
 class LoginInfo extends Component {
   constructor(props){
@@ -29,16 +42,25 @@ class LoginInfo extends Component {
   }
   updateLoginInfo(evt){
     evt.preventDefault();
-    axios.put(`/user/${config.usersObjectId}/updateinfo`, {
-      logininformation:{
-        username: this.state.username,
-        password: this.state.password
-      }
-    })
-      .catch(function(error){
-        console.log(error);
-      });
-    alert('Changes Saved');
+    if (validatePassword(this.state.password)) {
+      var temp = rand(160, 36);
+      var newpass = temp + this.state.password;
+      var hashed_password = crypto.createHash('sha512').update(newpass).digest("hex");
+
+      axios.put(`/user/${config.usersObjectId}/updateinfo`, {
+        logininformation:{
+          username: this.state.username,
+          password: hashed_password,
+          salt: temp
+        }
+      })
+        .catch(function(error){
+          console.log(error);
+        });
+      alert('Changes Saved');
+    } else {
+      alert('Password not strong enough please try again.');
+    }
   }
   componentDidMount() {
     axios.get(`/user/${config.usersObjectId}/data`)

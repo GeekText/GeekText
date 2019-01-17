@@ -1,4 +1,4 @@
-# GeekText
+# Bookify
 CEN4010 Team 5
 
 ## Stack:
